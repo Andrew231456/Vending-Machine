@@ -21,22 +21,22 @@ public class vendingMachine
         Double amount = input.nextDouble();
         int amountInt = (int)Math.round(amount); 
         
-        System.out.println("You have put in " + amountInt + " dollar bills");
-        System.out.println("Please enter your selected snack code number (Ex. A1,A2,B1,...).");
-       
+        System.out.println("You have put in " + amountInt + " dollar bills!");
+        System.out.println("Please enter your selected snack code number (Ex. A1,A2,B1,...)!");
+        
         Scanner input2 = new Scanner(System.in);
         String snack = input2.nextLine();
        
-        System.out.println("You have selected " + snack + ". One moment please.");
+        System.out.println("You have selected " + snack + "! One moment please...");
         
-        System.out.println("Are you happy with your selection? If not cancel now by entering 'no'. If you are happy enter 'yes'.");
+        System.out.println("Are you happy with your selection? If not cancel now by entering \"no\". If you are happy enter \"yes\".");
         String decision = input2.nextLine();
         if(decision.equalsIgnoreCase("no")) {
             Double amountLeft = 0.0;
             System.out.println("We're sorry you are not happy with your choice. Here is a full refund.");
             System.out.format("Amount Left: $%.2f", amountLeft);
             System.out.format("\nAmount Returned: $%.2f", amount);
-            System.out.println("Would you like to order a different snack?  If so, please enter 'yes'.");
+            System.out.println("Would you like to order a different snack?  If so, please enter \"yes\".");
             Scanner input3 = new Scanner(System.in);
             String reOrder = input3.nextLine();
              if (reOrder.equalsIgnoreCase("yes")) {

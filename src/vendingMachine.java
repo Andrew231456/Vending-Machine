@@ -5,31 +5,26 @@ public class vendingMachine
     public static void main(String[] args)
     {
     	// Variables
-    	Double A1,C7; // Vending codes
-    	Double A2,B4,B5,G8;// Vending codes
-    	Double A9;// Vending codes
+    	Double A1,C7,A2,B4,B5,G8,A9;// Vending codes
     	A1 = C7 = 1.50; //$1 for code
     	A2 = B4 = B5 = G8 = 2.00; //2$ Amount for code
     	A9 = 3.00; 	// 3$ for code
     	
     	// Prints
         System.out.println("Welcome to the best snack machine of your life! This machine only accepts $1 bills. Please insert money.");
-        System.out.println("[A1] Snickers - $1.50, [A2] Chips - $2.00,  [B4] Gatorade - $2.00,  [C7] Reese's - $1.50, [A9] Trail Mix - $3.00, \n [B5] Hershey's - $2.00, [G8] Granola Bar - $2.00");
-        System.out.println("How many $1 bills would you like to enter?");
+        System.out.println("Vending Codes:\n[A1] Snickers - $1.50, [A2] Chips - $2.00,  [B4] Gatorade - $2.00,  [C7] Reese's - $1.50, [A9] Trail Mix - $3.00, \n [B5] Hershey's - $2.00, [G8] Granola Bar - $2.00\nHow many $1 bills would you like to enter?");
        
         Scanner input = new Scanner(System.in);
         Double amount = input.nextDouble();
         int amountInt = (int)Math.round(amount); 
-        
-        System.out.println("You have put in " + amountInt + " dollar bills!");
-        System.out.println("Please enter your selected snack code number (Ex. A1,A2,B1,...)!");
-        
+        System.out.println("You have put in " + amountInt + " dollar bills\nPlease enter your selected snack code number (Ex. A1,A2,B1,...).");
+       
         Scanner input2 = new Scanner(System.in);
         String snack = input2.nextLine();
        
-        System.out.println("You have selected " + snack + "! One moment please...");
-        
-        System.out.println("Are you happy with your selection? If not cancel now by entering \"no\". If you are happy enter \"yes\".");
+        System.out.println("You have selected " + snack + ". One moment please.");
+        System.out.println("Are you happy with your selection? If not cancel now by entering 'no'. If you are happy enter 'yes'.");
+      
         String decision = input2.nextLine();
         if(decision.equalsIgnoreCase("no")) {
             Double amountLeft = 0.0;
@@ -48,8 +43,7 @@ public class vendingMachine
                  Double amount1 = input4.nextDouble();
                  int amountInt1 = (int)Math.round(amount1); 
                  
-                 System.out.println("You have put in " + amountInt1 + " dollar bills");
-                 System.out.println("Please enter your selected snack code number (Ex. A1,A2,B1,...).");
+                 System.out.println("You have put in " + amountInt1 + " dollar bills\nPlease enter your selected snack code number (Ex. A1,A2,B1,...).");
                 
                  Scanner input5 = new Scanner(System.in);
                  String snack1 = input5.nextLine();

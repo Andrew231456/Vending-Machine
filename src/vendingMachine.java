@@ -55,8 +55,7 @@ public class vendingMachine
                 
                  System.out.println("You have selected " + snack + ". One moment please.");
              }
-        }
-        else if (decision.equalsIgnoreCase("yes")) {
+        } else if (decision.equalsIgnoreCase("yes")) {
             Double amountLeft = 0.0;
             String snackName = "";
             // Switch
@@ -92,7 +91,7 @@ public class vendingMachine
                     amountLeft = amount - B5;
                     break;
                 case "g8":
-                    System.out.println("Getting G8");
+                    System.out.println("Getting [G8] Granola Bar");
                     snackName = "Granola Bar";
                     amountLeft = amount - G8;
                     break;
@@ -106,8 +105,7 @@ public class vendingMachine
             System.out.format("\nAmount Returned: $%.2f", amountLeft);
             System.out.println("\n You chose "+ snackName +"! What a great choice! That is one of my favorites, I hope you enjoy it too! \nHope to see you again real soon!");
         }
-        else
-        {
+        else {
             System.out.println("Invalid feedback. Cancelling Transaction.");
             System.out.format("\nAmount Returned: $%.2f", amount);
         }

@@ -25,12 +25,14 @@ public class vendingMachine
         System.out.println("You have put in " + amountInt + " dollar bills\nPlease enter your selected snack code number (Ex. A1,A2,B1,...).");
        
         Scanner input2 = new Scanner(System.in);
+        // SELECT YOUR SNACK
         String snack = input2.nextLine();
        
         System.out.println("You have selected " + snack + ". One moment please.");
         System.out.println("Are you happy with your selection? If not cancel now by entering 'no'. If you are happy enter 'yes'.");
       
         String decision = input2.nextLine();
+        // if decision is no
         if(decision.equalsIgnoreCase("no")) {
             Double amountLeft = 0.0;
             System.out.println("We're sorry you are not happy with your choice. Here is a full refund.");
@@ -41,8 +43,7 @@ public class vendingMachine
             String reOrder = input3.nextLine();
              if (reOrder.equalsIgnoreCase("yes")) {
             	 System.out.println("Welcome to the best snack machine of your life! This machine only accepts $1 bills. Please insert money.");
-                 System.out.println("[A1] Snickers - $1.50, [A2] Chips - $2.00,  [B4] Gatorade - $2.00,  [C7] Reese's - $1.50, [A9] Trail Mix - $3.00, \n [B5] Hershey's - $2.00, [G8] Granola Bar - $2.00");
-                 System.out.println("How many $1 bills would you like to enter?");
+                 System.out.println("[A1] Snickers - $1.50, [A2] Chips - $2.00,  [B4] Gatorade - $2.00,  [C7] Reese's - $1.50, [A9] Trail Mix - $3.00, \n [B5] Hershey's - $2.00, [G8] Granola Bar - $2.00\nHow many $1 bills would you like to enter?");
                 
                  Scanner input4 = new Scanner(System.in);
                  Double amount1 = input4.nextDouble();
@@ -55,10 +56,11 @@ public class vendingMachine
                 
                  System.out.println("You have selected " + snack + ". One moment please.");
              }
+            // if decision is yes
         } else if (decision.equalsIgnoreCase("yes")) {
             Double amountLeft = 0.0;
             String snackName = "";
-            // Switch
+            // Switches for snacks
             switch (snack.toLowerCase()) {
                 case "a1": // if its A1 then
                     System.out.println("Getting [A1] Snickers");

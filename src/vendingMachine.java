@@ -59,35 +59,42 @@ public class vendingMachine
         }
         else if (decision.equalsIgnoreCase("yes")) {
             Double amountLeft = 0.0;
-
+            String snackName = "";
             // Switch
             switch (snack.toLowerCase()) {
                 case "a1": // if its A1 then
                     System.out.println("Getting A1");
                     amountLeft = amount - A1;
+                    snackName = "Snickers";
                     break;
                 case "a2":
                     System.out.println("Getting A2");
                     amountLeft = amount - A2;
+                    snackName = "Chips";
                     break;
                 case "b4":
                     System.out.println("Getting B4");
                     amountLeft = amount - B4;
+                    snackName = "Gatorade";
                     break;
                 case "c7":
                     System.out.println("Getting C7");
                     amountLeft = amount - C7;
+                    snackName = "Reese's";
                     break;
                 case "a9":
                     System.out.println("Getting A9");
                     amountLeft = amount - A9;
+                    snackName = "Trail Mix";
                     break;
                 case "b5":
                     System.out.println("Getting B5");
+                    snackName = "Hershey's";
                     amountLeft = amount - B5;
                     break;
                 case "g8":
                     System.out.println("Getting G8");
+                    snackName = "Granola Bar";
                     amountLeft = amount - G8;
                     break;
                 default: // if none match then print this
@@ -98,7 +105,7 @@ public class vendingMachine
             System.out.format("Amount Left: $%.2f", amountLeft);
             System.out.println("\nReturning change...");
             System.out.format("\nAmount Returned: $%.2f", amountLeft);
-            System.out.println("\nWhat a great choice! That is one of my favorites, I hope you enjoy it too! \nHope to see you again real soon!");
+            System.out.println("\n You chose "+ snackName +"! What a great choice! That is one of my favorites, I hope you enjoy it too! \nHope to see you again real soon!");
         }
         else
         {

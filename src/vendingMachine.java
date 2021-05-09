@@ -63,32 +63,32 @@ public class vendingMachine
             // Switch
             switch (snack.toLowerCase()) {
                 case "a1": // if its A1 then
-                    System.out.println("Getting A1");
+                    System.out.println("Getting [A1] Snickers");
                     amountLeft = amount - A1;
                     snackName = "Snickers";
                     break;
                 case "a2":
-                    System.out.println("Getting A2");
+                    System.out.println("Getting [A2] Chips");
                     amountLeft = amount - A2;
                     snackName = "Chips";
                     break;
                 case "b4":
-                    System.out.println("Getting B4");
+                    System.out.println("Getting [B4] Gatorade");
                     amountLeft = amount - B4;
                     snackName = "Gatorade";
                     break;
                 case "c7":
-                    System.out.println("Getting C7");
+                    System.out.println("Getting [C7] Reese's");
                     amountLeft = amount - C7;
                     snackName = "Reese's";
                     break;
                 case "a9":
-                    System.out.println("Getting A9");
+                    System.out.println("Getting [A9] Trail Mix");
                     amountLeft = amount - A9;
                     snackName = "Trail Mix";
                     break;
                 case "b5":
-                    System.out.println("Getting B5");
+                    System.out.println("Getting [B5] Hershey's");
                     snackName = "Hershey's";
                     amountLeft = amount - B5;
                     break;
